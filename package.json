@@ -1,0 +1,13 @@
+{
+  "name": "stylelint-config-ts",
+  "version": "0.0.1",
+  "description": "Thought Shop configuration for Stylelint.",
+  "repository": "thoughtshop/stylelint-config-ts",
+  "licence": "MIT",
+  "author": "Thought Shop Creative Inc.",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "stylelint": "^14.0.1"
+  }
+}
