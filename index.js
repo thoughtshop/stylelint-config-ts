@@ -1,11 +1,10 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-standard-scss',
-    'stylelint-order'
+    'stylelint-config-standard-scss'
   ],
   plugins: [
-   
+    'stylelint-order'
   ],
   rules: {
     'order/order': [
