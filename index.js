@@ -6,6 +6,7 @@ module.exports = {
     'stylelint-order'
   ],
   rules: {
+    'declaration-empty-line-before': null,
     'order/order': [
       [
         {
@@ -341,6 +342,12 @@ module.exports = {
         "emptyLineMinimumPropertyThreshold": 4
       }
     ],
-    "scss/double-slash-comment-empty-line-before": false
+    "scss/double-slash-comment-empty-line-before": null,
+    "selector-class-pattern": [
+      "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
+      {
+        message: "Expected class selector to match BEM style"
+      }
+    ]
   }
 }
