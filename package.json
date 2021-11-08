@@ -18,6 +18,7 @@
     "stylelint-order": "^5.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.1"
+    "stylelint": "^14.0.1",
+    "stylelint-order": "^5.0.0"
   }
 }
