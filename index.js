@@ -340,6 +340,7 @@ module.exports = {
         "emptyLineBeforeUnspecified": "threshold",
         "emptyLineMinimumPropertyThreshold": 4
       }
-    ]
+    ],
+    "scss/double-slash-comment-empty-line-before": false
   }
 }
