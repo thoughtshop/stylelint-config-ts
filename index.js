@@ -6,6 +6,7 @@ module.exports = {
     'stylelint-order'
   ],
   rules: {
+    'alpha-value-notation': 'number',
     'declaration-empty-line-before': null,
     'order/order': [
       [
