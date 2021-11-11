@@ -1,71 +1,60 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard-scss'
-  ],
-  plugins: [
-    'stylelint-order'
-  ],
+  extends: ["stylelint-config-standard-scss"],
+  plugins: ["stylelint-order"],
   rules: {
-    'alpha-value-notation': 'number',
-    'declaration-empty-line-before': null,
-    'order/order': [
+    "alpha-value-notation": "number",
+    "declaration-empty-line-before": null,
+    "order/order": [
       [
         {
-          'type': 'at-rule',
-          'name': 'extends'
+          type: "at-rule",
+          name: "extends",
         },
-        'dollar-variables',
-        'custom-properties',
-        'at-rules',
-        'declarations',
+        "dollar-variables",
+        "custom-properties",
+        "at-rules",
+        "declarations",
         {
-          'type': 'at-rule',
-          'name': 'media',
-          'hasBlock': true
-        },
-        'rules',
-        {
-          'type': 'at-rule',
-          'name': 'supports'
+          type: "at-rule",
+          name: "media",
+          hasBlock: true,
         },
         {
-          'type': 'at-rule',
-          'name': 'for',
-          'hasBlock': true
+          type: "at-rule",
+          name: "supports",
         },
         {
-          'type': 'at-rule',
-          'name': 'media'
+          type: "at-rule",
+          name: "for",
+          hasBlock: true,
         },
         {
-          'type': 'at-rule',
-          'name': 'include',
-          'parameter': 'media-breakpoint-(up|down|only)',
-          'hasBlock': true
-        }
+          type: "at-rule",
+          name: "media",
+        },
+        {
+          type: "at-rule",
+          name: "include",
+          parameter: "media-breakpoint-(up|down|only)",
+          hasBlock: true,
+        },
+        "rules",
       ],
-      { 'severity': 'warning' }
+      { severity: "warning" },
     ],
     "order/properties-order": [
       [
-        { 
-          "groupName": "positioning",
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
-            "position",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "z-index"
-          ]
+        {
+          groupName: "positioning",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: ["position", "top", "right", "bottom", "left", "z-index"],
         },
         {
-          "groupName": "box-model",
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
+          groupName: "box-model",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: [
             "display",
             "flex",
             "flex-grow",
@@ -127,14 +116,14 @@ module.exports = {
             "overflow-x",
             "overflow-y",
             "overflow-scrolling",
-            "clip"
-          ]
+            "clip",
+          ],
         },
         {
-          "groupName": "visual",
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
+          groupName: "visual",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: [
             "background",
             "background-color",
             "background-image",
@@ -205,14 +194,14 @@ module.exports = {
             "filter",
             "isolation",
             "backdrop-filter",
-            "mix-blend-mode"
-          ]
+            "mix-blend-mode",
+          ],
         },
         {
-          "groupName": "typography",
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
+          groupName: "typography",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: [
             "color",
             "font",
             "font-weight",
@@ -271,14 +260,14 @@ module.exports = {
             "page-break-after",
             "page-break-before",
             "page-break-inside",
-            "src"
-          ]
+            "src",
+          ],
         },
         {
-          "groupName": "animation", 
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
+          groupName: "animation",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: [
             "transition",
             "transition-delay",
             "transition-timing-function",
@@ -292,25 +281,19 @@ module.exports = {
             "animation-delay",
             "animation-iteration-count",
             "animation-direction",
-            "animation-fill-mode"
-          ]
+            "animation-fill-mode",
+          ],
         },
         {
-          "groupName": "special",
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
-            "composes",
-            "@import",
-            "@extend",
-            "@mixin",
-            "@at-root"
-          ]
+          groupName: "special",
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: ["composes", "@import", "@extend", "@mixin", "@at-root"],
         },
         {
-          "emptyLineBefore": "threshold",
-          "noEmptyLineBetween": true,
-          "properties": [
+          emptyLineBefore: "threshold",
+          noEmptyLineBetween: true,
+          properties: [
             "appearance",
             "content",
             "clip",
@@ -332,23 +315,23 @@ module.exports = {
             "fill",
             "fill-rule",
             "clip-rule",
-            "stroke"
-          ]
-        }
+            "stroke",
+          ],
+        },
       ],
       {
-        "severity": "warning",
-        "unspecified": "bottomAlphabetical",
-        "emptyLineBeforeUnspecified": "threshold",
-        "emptyLineMinimumPropertyThreshold": 4
-      }
+        severity: "warning",
+        unspecified: "bottomAlphabetical",
+        emptyLineBeforeUnspecified: "threshold",
+        emptyLineMinimumPropertyThreshold: 4,
+      },
     ],
     "scss/double-slash-comment-empty-line-before": null,
     "selector-class-pattern": [
       "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
       {
-        message: "Expected class selector to match BEM style"
-      }
-    ]
-  }
-}
+        message: "Expected class selector to match BEM style",
+      },
+    ],
+  },
+};
