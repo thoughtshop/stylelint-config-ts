@@ -15,6 +15,10 @@ module.exports = {
         "at-rules",
         "declarations",
         {
+          type: "rule",
+          selector: /^&::[\w-]+$/,
+        },
+        {
           type: "at-rule",
           name: "media",
           hasBlock: true,
