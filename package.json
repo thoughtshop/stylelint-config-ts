@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Thought Shop shareable configuration for Stylelint.",
   "repository": "thoughtshop/stylelint-config-ts",
   "licence": "MIT",
