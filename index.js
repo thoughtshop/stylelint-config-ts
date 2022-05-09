@@ -4,6 +4,10 @@ module.exports = {
   rules: {
     "alpha-value-notation": "number",
     "declaration-empty-line-before": null,
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      { ignoreShorthands: ["/grid/", "/flex/"] },
+    ],
     "order/order": [
       [
         {
